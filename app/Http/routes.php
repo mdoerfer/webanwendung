@@ -22,3 +22,5 @@ Route::get('test', function() {
 });
 
 Route::get('testcontroller', 'testController@home');
+
+Route::get('projekte', 'ProjektController@index');
