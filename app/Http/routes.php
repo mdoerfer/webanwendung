@@ -16,5 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('test', function() {
-    return view('test.hello');
+    $array = ['Anna', 'Tom', 'Susi'];
+    $leereArray =[];
+    return view('test.hello', compact('array','leereArray'));
 });
