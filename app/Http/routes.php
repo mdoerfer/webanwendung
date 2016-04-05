@@ -20,3 +20,5 @@ Route::get('test', function() {
     $leereArray =[];
     return view('test.hello', compact('array','leereArray'));
 });
+
+Route::get('testcontroller', 'testController@home');
