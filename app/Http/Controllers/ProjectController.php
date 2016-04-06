@@ -12,7 +12,7 @@ class ProjectController extends Controller
 {
     public function index()
     {
-        $projekte = DB::table('projects')->get();
+        $projekte = DB::table('pojects')->get();
         return view('projekte.index', compact('projekte'));
     }
 
