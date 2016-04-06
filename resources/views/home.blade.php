@@ -8,7 +8,7 @@
                 <div class="panel-heading">Dashboard</div>
 
                 <div class="panel-body">
-                    <h1>Plane deine Meilensteine schnell und Effizient!</h1>
+                    <h1>Plane deine Meilensteine schnell und effizient!</h1>
                     <button>Neues Projekt</button>
                     <button>Meine Projekte</button>
                 </div>

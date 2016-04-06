@@ -12,12 +12,20 @@ class CreateProjecttable extends Migration
      */
     public function up()
     {
-        Schema::create('projects', function (Blueprint $table) {
+        Schema::create('pojects', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
             $table->string('title');
+		    $table->integer('seitenanzahl');
             $table->date('Startdatum');
+		    $table->date('Gliederung');
+		    $table->date('Recherche');
+		    $table->date('Schreibphase');
+		    $table->date('Korrekturphase');
+		    $table->date('Verbesserung');
+		    $table->date('Druckerei');
             $table->date('Finalisierungsdatum');
+
         });
     }
 
@@ -28,6 +36,6 @@ class CreateProjecttable extends Migration
      */
     public function down()
     {
-        Schema::drop('projects');
+        Schema::drop('pojects');
     }
 }
