@@ -13,9 +13,21 @@
 
     @foreach ($projekte as $projekt)
     <div>
-        <p>{{ $projekt->title }}</p>
-        <p>Muss finalisiert werden am:</p>
-        <p>{{ $projekt->Finalisierungsdatum }}</p>
+        <h3>{{ $projekt->title }}</h3>
+        <ul>
+            <li>
+                Erwartete Seitenanzahl: {{ $projekt->seitenanzahl }}
+            </li>
+            <li>
+                Beginn: {{ $projekt->Startdatum }}
+            </li>
+            <li>
+                Abgabe: {{ $projekt->Finalisierungsdatum }}
+            </li>
+            <li>
+                Fertigstellung der Gliederung: {{ $projekt->Gliederung }}
+            </li>
+        </ul>
     </div>
     @endforeach
 

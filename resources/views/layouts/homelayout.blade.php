@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>Meilensteinplaner</title>
 
     <!-- Fonts -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
@@ -18,7 +18,8 @@
     <style>
         body {
             font-family: 'Lato';
-            background-color: #99cb84;
+            color: #5e5e5e;
+            background-color: #ACFA58;
         }
 
         .fa-btn {
@@ -41,7 +42,7 @@
 
             <!-- Branding Image -->
             <a class="navbar-brand" href="{{ url('/') }}">
-                Laravel
+                Meilensteinplaner
             </a>
         </div>
 
@@ -49,7 +50,7 @@
             <!-- Left Side Of Navbar -->
             <ul class="nav navbar-nav">
                 <li><a href="{{ url('/home') }}">Home</a></li>
-                <li><a href="{{ url('/projekte') }}">Meine Projekte</a></li>
+                <li><a href="{{ url('/projekte') }}">Aktuelle Projekte</a></li>
                 <li><a href="{{ url('/anlegen') }}">Projekte anlegen</a></li>
             </ul>
 

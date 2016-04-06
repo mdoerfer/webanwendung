@@ -18,7 +18,8 @@
     <style>
         body {
             font-family: 'Lato';
-            background-image: url("http://www.wand-design.de/images/product_images/popup_images/0507-1-03_wand-design_gras_acrylglasbild_gras_mit_tau.jpg");
+            color: #5e5e5e;
+            background-image: url("http://3.bp.blogspot.com/-t0gdA8kuxyI/USf9yGbjkaI/AAAAAAAANkY/k8m-p_I-aS4/s1600/wallpaper-abstrakt-hintergrund-mit-gr%C3%BCnen-streifen.jpg");
         }
 
         .fa-btn {
@@ -41,7 +42,7 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    Laravel
+                    Meilensteinplaner
                 </a>
             </div>
 
@@ -49,7 +50,7 @@
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url('/home') }}">Home</a></li>
-                    <li><a href="{{ url('/projekte') }}">Meine Projekte</a></li>
+                    <li><a href="{{ url('/projekte') }}">Aktuelle Projekte</a></li>
                     <li><a href="{{ url('/anlegen') }}">Projekte anlegen</a></li>
                 </ul>
 
