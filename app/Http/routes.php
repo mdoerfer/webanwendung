@@ -24,6 +24,7 @@ Route::get('/test', function() {
 Route::get('/testcontroller', 'testController@home');
 
 Route::get('/projekte', 'ProjectController@index');
+
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
