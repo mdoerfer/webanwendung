@@ -15,17 +15,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('test', function() {
+Route::get('/test', function() {
     $array = ['Anna', 'Tom', 'Susi'];
     $leereArray =[];
     return view('test.hello', compact('array','leereArray'));
 });
 
-Route::get('testcontroller', 'testController@home');
+Route::get('/testcontroller', 'testController@home');
 
-Route::get('projekte', 'ProjectController@index');
+Route::get('/projekte', 'ProjectController@index');
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('anlegen', 'ProjectController@anlegen');
+Route::get('/anlegen', 'ProjectController@anlegen');

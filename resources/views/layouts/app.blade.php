@@ -18,6 +18,7 @@
     <style>
         body {
             font-family: 'Lato';
+            background-image: url("http://www.wand-design.de/images/product_images/popup_images/0507-1-03_wand-design_gras_acrylglasbild_gras_mit_tau.jpg");
         }
 
         .fa-btn {
@@ -48,6 +49,8 @@
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url('/home') }}">Home</a></li>
+                    <li><a href="{{ url('/projekte') }}">Meine Projekte</a></li>
+                    <li><a href="{{ url('/anlegen') }}">Projekte anlegen</a></li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->

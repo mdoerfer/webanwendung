@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.homelayout')
 
 @section('content')
 <div class="container">
@@ -9,8 +9,6 @@
 
                 <div class="panel-body">
                     <h1>Plane deine Meilensteine schnell und effizient!</h1>
-                    <button>Neues Projekt</button>
-                    <button>Meine Projekte</button>
                 </div>
             </div>
         </div>
