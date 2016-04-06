@@ -15,4 +15,9 @@ class ProjectController extends Controller
         $projekte = DB::table('projects')->get();
         return view('projekte.index', compact('projekte'));
     }
+
+    public function anlegen()
+    {
+        return view('projekte.anlegen');
+    }
 }

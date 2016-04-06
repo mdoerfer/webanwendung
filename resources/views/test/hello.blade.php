@@ -1,7 +1,11 @@
 @extends('testlayout')
 
 @section('content')
+
+
+
         <div class="title">Here you go</div>
+
         <div>
             <h2>Leere Array wird durch Blade erkannt</h2>
             @if (empty($leereArray))
@@ -19,5 +23,6 @@
             @foreach ($array as $person)
             <li>{{$person}}</li>
             @endforeach
+            <button>Knopf</buton>
 
 @stop

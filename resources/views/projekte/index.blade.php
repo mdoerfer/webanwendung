@@ -1,4 +1,4 @@
-@extends('testlayout')
+@extends('welcome')
 
 @section('content')
     <h1>Alle Projekte</h1>
