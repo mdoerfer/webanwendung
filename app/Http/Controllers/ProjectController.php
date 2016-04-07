@@ -35,6 +35,12 @@ class ProjectController extends Controller
         return view('projekte.anlegen');
     }
 
+    public function destroy($id)
+    {
+        Project::findOrFail($id)->delete();
+        return redirect ('projekte');
+    }
+
     public function store()
     {
         $input = Request::all();
