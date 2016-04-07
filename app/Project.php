@@ -11,6 +11,7 @@ class Project extends Model
     protected $fillable = [
         'id',
         'title',
+        'seitenanzahl',
         'Startdatum',
         'Finalisierungsdatum'
     ];

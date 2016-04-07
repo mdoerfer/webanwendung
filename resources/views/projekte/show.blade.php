@@ -11,16 +11,37 @@
                     <div class="panel-body">
 
                                 <ul>
-                                    <li>
+                                    <li class="startdate">
+                                        Beginn: <span>{{ $projekt->Startdatum }}</span>
+                                    </li>
+                                    <li class="enddate">
+                                        Abgabe: <span>{{ $projekt->Finalisierungsdatum }}</span>
+                                    </li>
+                                    <li class="seiten">
                                         Erwartete Seitenanzahl: {{ $projekt->seitenanzahl }}
                                     </li>
-                                    <li>
-                                        Beginn: {{ $projekt->Startdatum }}
-                                    </li>
-                                    <li>
-                                        Abgabe: {{ $projekt->Finalisierungsdatum }}
-                                    </li>
                                 </ul>
+
+                        <hr />
+
+                        <h2 class="abgabe">Zeit bis zur Abgabe: <span></span></h2>
+
+                        <p>Die verschiedenen Phasen können sich teilweise überschneiden. Aber soviel Zeit sollte eingeplant werden:
+
+                        <ul>
+
+                        <li class="gliederung">Gliederungerstellung: <span></span></li>
+
+                        <li class="recherche">Recherche: <span></span></li>
+
+                        <li class="schreibphase">Schreiben: <span></span></li>
+
+                        <li class="korrektur">Korrekturen: <span></span></li>
+
+                        <li class="drucken">Drucken: <span></span></li>
+
+                        </ul>
+
 
                         <hr />
 
