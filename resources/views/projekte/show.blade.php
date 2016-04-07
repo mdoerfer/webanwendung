@@ -10,6 +10,29 @@
 
                     <div class="panel-body">
 
+                        <h3 class="abgabe">Zeit bis zur Abgabe: <span></span></h3>
+
+                        <p>Die verschiedenen Phasen können sich teilweise überschneiden. Aber soviel Zeit sollte eingeplant werden:
+
+                        <ul>
+
+                            <li class="gliederung">Gliederungerstellung: <span></span></li>
+
+                            <li class="recherche">Recherche: <span></span></li>
+
+                            <li class="schreibphase">Schreiben: <span></span></li>
+
+                            <li class="korrektur">Korrekturen: <span></span></li>
+
+                            <li class="drucken">Drucken: <span></span></li>
+
+                        </ul>
+
+
+                        <hr />
+
+                        <p>Eingegebene Daten</p>
+
                                 <ul>
                                     <li class="startdate">
                                         Beginn: <span>{{ $projekt->Startdatum }}</span>
@@ -24,26 +47,6 @@
 
                         <hr />
 
-                        <h2 class="abgabe">Zeit bis zur Abgabe: <span></span></h2>
-
-                        <p>Die verschiedenen Phasen können sich teilweise überschneiden. Aber soviel Zeit sollte eingeplant werden:
-
-                        <ul>
-
-                        <li class="gliederung">Gliederungerstellung: <span></span></li>
-
-                        <li class="recherche">Recherche: <span></span></li>
-
-                        <li class="schreibphase">Schreiben: <span></span></li>
-
-                        <li class="korrektur">Korrekturen: <span></span></li>
-
-                        <li class="drucken">Drucken: <span></span></li>
-
-                        </ul>
-
-
-                        <hr />
 
                          <a href="{{ url('/projekte/anlegen', $projekt->id) }}" class="btn btn-warning">Bearbeiten</a>
 
