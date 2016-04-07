@@ -10,7 +10,7 @@
 
                     <div class="panel-body">
 
-                        <h3 class="abgabe">Zeit bis zur Abgabe: <span></span></h3>
+                        <h3 class="abgabe">Zeitraum für das gesamte Projekt: <span></span></h3>
 
                         <p>Die verschiedenen Phasen können sich teilweise überschneiden. Aber soviel Zeit sollte eingeplant werden:
 
