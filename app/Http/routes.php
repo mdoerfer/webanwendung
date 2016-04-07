@@ -21,6 +21,8 @@ Route::get('/test', function() {
     return view('test.hello', compact('array','leereArray'));
 });
 
+Route::resource('project','ProjectController');
+
 Route::get('/testcontroller', 'testController@home');
 
 Route::get('/projekte', 'ProjectController@index');

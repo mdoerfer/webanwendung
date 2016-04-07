@@ -46,6 +46,7 @@ class ProjectController extends Controller
         $input = Request::all();
         $input['published_at']= Carbon::now();
 
+
         Project::create($input);
 
         return redirect('projekte');

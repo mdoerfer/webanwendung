@@ -24,7 +24,7 @@
 
                                 {!! Form::label('seitenanzahl', 'Seitenzahl der Arbeit:') !!}
 
-                                {!! Form::text('seitenanzahl', null, ['class' => 'form-control']) !!}
+                                {!! Form::input('number','seitenanzahl', null, ['class' => 'form-control']) !!}
 
                             </div>
 
@@ -32,7 +32,7 @@
                             <div class="form-group">
 
                                 {!! Form::label('Startmonat', 'Startdatum:') !!}
-                                {!! Form::input('date', 'Startmonat', null, ['class' => 'form-control']) !!}
+                                {!! Form::input('date', 'Startdatum', null, ['class' => 'form-control']) !!}
 
 
                             </div>
@@ -41,7 +41,7 @@
 
                                 {!! Form::label('Finalisierungsmonat', 'Finalisierungsdatum / Abgabe:') !!}
 
-                                {!! Form::input('date', 'Finalisierungsmonat', null, ['class' => 'form-control']) !!}
+                                {!! Form::input('date', 'Finalisierungsdatum', date('Y-m-d'), null, ['class' => 'form-control']) !!}
                             </div>
 
                             <div>
