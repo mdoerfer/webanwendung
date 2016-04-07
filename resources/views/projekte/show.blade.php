@@ -21,7 +21,16 @@
                                         Abgabe: {{ $projekt->Finalisierungsdatum }}
                                     </li>
                                 </ul>
-                         <a href="{{ url('/projekte/anlegen', $projekt->id) }}">Bearbeiten</a>
+
+                        <hr />
+
+                         <a href="{{ url('/projekte/anlegen', $projekt->id) }}" class="btn btn-warning">Bearbeiten</a>
+
+                        <hr />
+
+                        {!! Form::open(['method' => 'DELETE', 'route'=>['project.destroy', $projekt->id]]) !!}
+                        {!! Form::submit(' Löschen ', ['class' => 'btn btn-danger']) !!}
+                        {!! Form::close() !!}
 
                         </div>
 
