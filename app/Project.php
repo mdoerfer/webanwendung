@@ -11,14 +11,7 @@ class Project extends Model
     protected $fillable = [
         'id',
         'title',
-        'seitenanzahl',
         'Startdatum',
-        'Gliederung',
-        'Recherche',
-        'Schreibphase',
-        'Korrekturphase',
-        'Verbesserung',
-        'Druckerei',
         'Finalisierungsdatum'
     ];
 }

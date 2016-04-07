@@ -18,12 +18,6 @@ class CreateProjecttable extends Migration
             $table->string('title');
 		    $table->integer('seitenanzahl');
             $table->date('Startdatum');
-		    $table->date('Gliederung');
-		    $table->date('Recherche');
-		    $table->date('Schreibphase');
-		    $table->date('Korrekturphase');
-		    $table->date('Verbesserung');
-		    $table->date('Druckerei');
             $table->date('Finalisierungsdatum');
 
         });
