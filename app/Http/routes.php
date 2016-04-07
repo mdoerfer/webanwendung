@@ -36,3 +36,5 @@ Route::get('/anlegen', 'ProjectController@create');
 Route::post('/projekte', 'ProjectController@store');
 
 Route::get('/projekte/{id}', 'ProjectController@show');
+
+Route::get('/projekte/anlegen/{id}', 'ProjectController@edit');

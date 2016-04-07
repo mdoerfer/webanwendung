@@ -30,6 +30,12 @@ class ProjectController extends Controller
         return view('projekte.show', compact('projekt'));
     }
 
+    public function edit($id)
+    {
+        $projekt = Project::findOrFail($id);
+        return view('projekte.edit', compact('projekt'));
+    }
+
     public function create()
     {
         return view('projekte.anlegen');
@@ -51,4 +57,13 @@ class ProjectController extends Controller
 
         return redirect('projekte');
     }
+
+    public function update($id)
+    {
+        $input = Request::all();
+        $projekt=Project::find($id);
+        $projekt->update($input);
+        return redirect('projekte');
+    }
+
 }

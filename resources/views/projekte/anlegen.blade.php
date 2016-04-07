@@ -41,7 +41,7 @@
 
                                 {!! Form::label('Finalisierungsmonat', 'Finalisierungsdatum / Abgabe:') !!}
 
-                                {!! Form::input('date', 'Finalisierungsdatum', date('Y-m-d'), null, ['class' => 'form-control']) !!}
+                                {!! Form::input('date', 'Finalisierungsdatum', null, ['class' => 'form-control']) !!}
                             </div>
 
                             <div>

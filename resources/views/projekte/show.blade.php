@@ -21,6 +21,7 @@
                                         Abgabe: {{ $projekt->Finalisierungsdatum }}
                                     </li>
                                 </ul>
+                         <a href="{{ url('/projekte/anlegen', $projekt->id) }}">Bearbeiten</a>
 
                         </div>
 

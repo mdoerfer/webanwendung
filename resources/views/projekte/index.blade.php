@@ -15,6 +15,7 @@
         <h3>
             <a href="/projekte/ {{ $projekt->id }}">{{ $projekt->title }}</a>
         </h3>
+
     </div>
     @endforeach
 
