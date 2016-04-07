@@ -9,7 +9,50 @@
 
                     <div class="panel-body">
                         <div>
-                             <h1>Neues Projekt anlegen</h1>
+                            <h1>Neues Projekt anlegen</h1>
+
+                            <hr/>
+
+                            {!! Form::open(['url'=>'projekte']) !!}
+
+                            <div class="form-group">
+
+                                {!! Form::label('title', 'Titel der Arbeit:') !!}
+
+                                {!! Form::text('title', null, ['class' => 'form-control']) !!}
+
+                            </div>
+
+                            <div class="form-group">
+
+                                {!! Form::label('seitenanzahl', 'Seitenzahl der Arbeit:') !!}
+
+                                {!! Form::text('seitenanzahl', null, ['class' => 'form-control']) !!}
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                {!! Form::label('Startmonat', 'Startdatum:') !!}
+                                {!! Form::selectMonth('month', null, ['class' => 'form-control']) !!}
+
+
+                            </div>
+
+                            <div class="form-group">
+
+                                {!! Form::label('Finalisierungsmonat', 'Finalisierungsdatum / Abgabe:') !!}
+
+                                {!! Form::selectMonth('month', null, ['class' => 'form-control']) !!}
+                            </div>
+
+                            <div>
+                                {!! Form::submit('Projekt hinzufügen', ['class' => 'btn btn-primary form-control']) !!}
+                            </div>
+
+                            {!! Form::close() !!}
+
                          </div>
                     </div>
                 </div>

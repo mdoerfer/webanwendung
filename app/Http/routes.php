@@ -29,4 +29,8 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('/anlegen', 'ProjectController@anlegen');
+Route::get('/anlegen', 'ProjectController@create');
+
+Route::post('/projekte', 'ProjectController@store');
+
+Route::get('/projekte/{id}', 'ProjectController@show');

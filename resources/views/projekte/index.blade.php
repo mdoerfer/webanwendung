@@ -13,21 +13,9 @@
 
     @foreach ($projekte as $projekt)
     <div>
-        <h3>{{ $projekt->title }}</h3>
-        <ul>
-            <li>
-                Erwartete Seitenanzahl: {{ $projekt->seitenanzahl }}
-            </li>
-            <li>
-                Beginn: {{ $projekt->Startdatum }}
-            </li>
-            <li>
-                Abgabe: {{ $projekt->Finalisierungsdatum }}
-            </li>
-            <li>
-                Fertigstellung der Gliederung: {{ $projekt->Gliederung }}
-            </li>
-        </ul>
+        <h3>
+            <a href="/projekte/ {{ $projekt->id }}">{{ $projekt->title }}</a>
+        </h3>
     </div>
     @endforeach
 
