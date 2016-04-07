@@ -32,7 +32,7 @@
                             <div class="form-group">
 
                                 {!! Form::label('Startmonat', 'Startdatum:') !!}
-                                {!! Form::text('Startmonat', null, ['class' => 'form-control']) !!}
+                                {!! Form::input('date', 'Startmonat', null, ['class' => 'form-control']) !!}
 
 
                             </div>
@@ -41,7 +41,7 @@
 
                                 {!! Form::label('Finalisierungsmonat', 'Finalisierungsdatum / Abgabe:') !!}
 
-                                {!! Form::text('Finalisierungsmonat', null, ['class' => 'form-control']) !!}
+                                {!! Form::input('date', 'Finalisierungsmonat', null, ['class' => 'form-control']) !!}
                             </div>
 
                             <div>
